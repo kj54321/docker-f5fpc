@@ -51,7 +51,7 @@ if [ -z "$PASSWORD" -a -z "$HEXPASSWORD" ] ; then
 fi
 
 # build command
-command="$F5FPC -s -t $VPNHOST -u $USERNAME"
+command="$F5FPC -x -s -t $VPNHOST -u $USERNAME"
 
 if [ -n "$PASSWORD" ] ; then
 	command="$command -p $PASSWORD"
